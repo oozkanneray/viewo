@@ -1,8 +1,8 @@
 function Photo({ img,username,name }) {
   return (
-    <div className="w-[150px] h-[150px] sm:w-[500px] sm:h-[500px]">
+    <div className="w-[100px] h-[100px] sm:w-[500px] sm:h-[500px]">
       <img
-        className="w-[150px] h-[150px] sm:w-[500px] sm:h-[500px] object-cover absolute"
+        className="w-[100px] h-[100px] sm:w-[500px] sm:h-[500px] object-cover absolute"
         src={
           "https://usvilimpqyyjzznmnpkx.supabase.co//storage/v1/object/public/photos/" +
           img

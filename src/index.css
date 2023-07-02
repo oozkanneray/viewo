@@ -44,8 +44,8 @@ html {
 
 @media only screen and (max-width: 640px) {
   .image-holder {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     opacity: 0;
     transition: 0.1s ease-in-out;
   }
