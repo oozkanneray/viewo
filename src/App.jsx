@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Main from "./components/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Signin from "./components/SignIn";
+import Signin from "./components/Signin";
 import { useState } from "react";
 import Profile from "./components/Profile";
 
