@@ -15,10 +15,9 @@ function Main({user}) {
   };
 
   return (
-    <section>
-      <div className="text-white my-6 sm:my-12 flex flex-col justify-center items-center" id="showcase">
-        <div className=" text-xl sm:text-4xl mb-2 test font-extrabold" >Showcase</div>
-        <div className="line h-1"></div>
+    <section className="w-[100%] h-[100vh]">
+      <div>
+        test <br /> test <br />btets <br /> test
       </div>
       <Showcase user={user}/>
     </section>
