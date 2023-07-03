@@ -22,8 +22,8 @@ function Signin({ setUser }) {
 
   return (
     <section>
-      <div className="flex flex-col justify-center items-center w-[100%] h-[100vh] bg-black/100 shadow-3xl">
-        <div className="shadow-md shadow-black text-black rounded-xl bg-white bac absolute">
+      <div className="flex flex-col justify-center items-center w-[100%] h-[100vh] shadow-3xl">
+        <div className="shadow-md shadow-black text-white rounded-xl bg-[rgb(20,20,20)] bac absolute">
           <form
             className="flex flex-col m-10"
             onSubmit={(e) => {

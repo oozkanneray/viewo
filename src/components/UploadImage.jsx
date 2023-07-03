@@ -1,9 +1,12 @@
 import supabase from "../supabase";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { useNavigate } from "react-router-dom";
 
 function UploadImage({ user,showcaseImages }) {
   const [file, setFile] = useState([]);
+
+  const navigate = useNavigate()
 
   const handleFileSelected = (e) => {
     setFile(e.target.files[0]);
@@ -44,7 +47,7 @@ function UploadImage({ user,showcaseImages }) {
             htmlFor="upload_image"
             className="inline-block p-5 cursor-pointer bg-blue-500 text-xl text-white ml-5"
           >
-            Upload Image
+            Choose Image
           </label>
           <input
             type="file"

@@ -18,9 +18,9 @@ function Showcase({ user }) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col w-full justify-center items-center">
       <div
-        className="text-white my-6 sm:my-12 flex flex-col justify-center items-center"
+        className="text-white my-4 sm:my-8 flex flex-col justify-center items-center"
         id="showcase"
       >
         <div className=" text-xl sm:text-4xl mb-2 test font-extrabold">
@@ -29,7 +29,7 @@ function Showcase({ user }) {
         <div className="line h-1"></div>
       </div>
       <UploadImage showcaseImages={showcaseImages} user={user} />
-      <div className="grid grid-cols-3 mb-20 gap-1.5">
+      <div className="grid grid-cols-3 mb-20 gap-2">
         {img.map((item, index) => (
           <Photo
             key={index}

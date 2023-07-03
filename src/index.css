@@ -11,44 +11,18 @@
 
 #root {
   font-family: "Secular One", sans-serif;
-  background-color: black;
+  background-color: rgb(32,32,32);
   box-sizing: border-box;
+  height: 100%;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-
-/* #bg-image {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0),
-      rgba(0, 0, 0, 0.63),
-      rgb(0, 0, 0)
-    ),
-    url("assets/mountain.jpeg");
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  position: absolute;
-  filter: brightness(0.9);
-} */
-
 .image-holder {
-  width: 500px;
-  height: 500px;
   opacity: 0;
   transition: 0.1s ease-in-out;
-}
-
-@media only screen and (max-width: 640px) {
-  .image-holder {
-    width: 100px;
-    height: 100px;
-    opacity: 0;
-    transition: 0.1s ease-in-out;
-  }
 }
 
 .image-holder:hover {
@@ -82,9 +56,21 @@ input[type="file"] {
 
 @layer components {
   .input{
-    @apply border-b-[3px] m-2 border-blue-200 focus:outline-none focus:border-blue-500 transition-colors
+    @apply border-b-[3px] m-2 border-blue-900 focus:outline-none text-white bg-[rgb(40,40,40)] rounded-sm focus:border-blue-500 transition-colors
   }
   .label{
-    @apply ml-2 text-lg text-black/95 
+    @apply ml-2 text-lg text-white/95 
+  }
+  .photo{
+    @apply w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px] 2xl:w-[500px] 2xl:h-[500px]
+  }
+  .text{
+    @apply sm:text-sm md:text-lg xl:text-2xl 2xl:text-3xl
+  }
+  .main-text{
+    @apply 2xl:text-2xl xl:text-2xl md:text-xl sm:text-base m-2
+  }
+  .welcome-text{
+    @apply 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl
   }
 }
