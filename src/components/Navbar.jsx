@@ -22,22 +22,8 @@ function Navbar({ user }) {
             V<span className="text-blue-500">i</span>ewo
           </Link>
         </div>
-
-        {/* <ul className="flex text-xl">
-          <Link to="/login">
-            <ul className="ml-10 mix-blend-difference">Log In</ul>
-          </Link>
-          <ul className="ml-10">Register</ul>
-          <ul className="ml-10" onClick={logout}>
-            Logout
-          </ul>
-        </ul> */}
-
         {Object.keys(user).length !== 0 ? (
           <ul className="flex text-xl">
-            <Link to="profile">
-              <li className="ml-10">Profile</li>
-            </Link>
             <button onClick={logout}>
               <li className="ml-10">Logout</li>
             </button>
