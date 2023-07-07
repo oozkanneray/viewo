@@ -10,6 +10,7 @@ function Showcase({ user }) {
     showcaseImages();
   }, []);
 
+
   const showcaseImages = async () => {
     const { data, error } = await supabase
       .from("images")
@@ -18,7 +19,7 @@ function Showcase({ user }) {
   };
 
   return (
-    <div className="flex flex-col w-full justify-center items-center">
+    <div className="flex flex-col w-full justify-center items-center mt-64">
       <div
         className="text-white my-4 sm:my-8 flex flex-col justify-center items-center"
         id="showcase"
@@ -26,7 +27,7 @@ function Showcase({ user }) {
         <div className=" text-xl sm:text-4xl mb-2 test font-extrabold">
           Showcase
         </div>
-        <div className="line h-1"></div>
+        <div className="bg-gradient-to-r from-transparent via-white to-transparent h-1 w-full"></div>
       </div>
       <UploadImage showcaseImages={showcaseImages} user={user} />
       <div className="grid grid-cols-3 mb-20 gap-2">
