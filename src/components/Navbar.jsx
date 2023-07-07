@@ -17,7 +17,7 @@ function Navbar({ user }) {
   return (
     <>
       <nav className="text-white h-16 fixed w-full items-center flex justify-around z-30 bg-black  bg-opacity-40 shadow-lg backdrop-blur-md">
-        <div className="logo text-2xl sm:text-4xl font-extrabold italic">
+        <div className="font-knewave  text-2xl sm:text-4xl font-extrabold italic">
           <Link to="/ ">
             V<span className="text-blue-500">i</span>ewo
           </Link>
