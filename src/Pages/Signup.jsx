@@ -93,7 +93,7 @@ function Signup() {
                 required
               ></input>
             </div>
-            {userError ? <p className="text-red-400/80 text-center text-sm">Account already exists.</p> : null}
+            {userError ? <p className="text-red-400/80 text-center text-sm">Account already exists or invalid input.</p> : null}
             <button type="submit" className="p-3 text-white  bg-blue-500 m-5 rounded-xl text-xl">
               Register
             </button>
