@@ -1,12 +1,9 @@
 import supabase from "../supabase";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { useNavigate } from "react-router-dom";
 
 function UploadImage({ user,showcaseImages }) {
   const [file, setFile] = useState([]);
-
-  const navigate = useNavigate()
 
   const handleFileSelected = (e) => {
     setFile(e.target.files[0]);
@@ -21,7 +18,6 @@ function UploadImage({ user,showcaseImages }) {
 
     await addImage(generateID);
     showcaseImages()
-
   };
   
   const addImage = async (photoID) => {
@@ -54,6 +50,7 @@ function UploadImage({ user,showcaseImages }) {
             name="image"
             id="upload_image"
             accept="image/*"
+            className="hidden"
             onChange={handleFileSelected}
           />
           <button
