@@ -47,6 +47,7 @@ function Signup() {
                 className="input"
                 type="text"
                 autoComplete="off"
+                required
               ></input>
               
             </div>
@@ -60,6 +61,7 @@ function Signup() {
                 className="input"
                 type="text"
                 autoComplete="off"
+                required
               ></input>
             </div>
             <div className="m-2 flex flex-col">
@@ -74,6 +76,7 @@ function Signup() {
                 }}
                 type="email"
                 autoComplete="off"
+                required
               ></input>
             </div>
             <div className="m-2 flex flex-col">
@@ -87,6 +90,7 @@ function Signup() {
                   setPassword(e.target.value);
                 }}
                 type="password"
+                required
               ></input>
             </div>
             {userError ? <p className="text-red-400/80 text-center text-sm">Account already exists.</p> : null}
