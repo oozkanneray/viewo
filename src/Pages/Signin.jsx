@@ -46,6 +46,7 @@ function Signin({ setUser }) {
                   setEmail(e.target.value);
                 }}
                 type="email"
+                required
               ></input>
             </div>
             <div className="m-2 flex flex-col">
@@ -59,6 +60,7 @@ function Signin({ setUser }) {
                   setPassword(e.target.value);
                 }}
                 type="password"
+                required
               ></input>
             </div>
             {error ? <p className="text-red-400/80 text-center text-sm">Email or Password is incorrect.</p> : null}
